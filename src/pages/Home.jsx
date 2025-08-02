@@ -9,9 +9,9 @@ const heroCards = [
 ];
 
 const cardDesigns = [
-  { title: 'Card/001', imgSrc: '/public/assets/Card/card.png', isPro: false },
-  { title: 'Card/002', imgSrc: '/public/assets/Card/Desktop - 1.png', isPro: false },
-  { title: 'Card/003', imgSrc: '/public/assets/Card/Screenshot 2025-06-24 154643.png', isPro: true },
+  { title: 'Card/001', imgSrc: '/assets/Card/card3.png', isPro: false },
+  { title: 'Card/002', imgSrc: '/assets/Card/card8.png', isPro: false },
+  { title: 'Card/003', imgSrc: '/assets/Card/card4.png', isPro: true },
   // Add more cards as needed
 ];
 

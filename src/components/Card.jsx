@@ -1,8 +1,9 @@
+
 const Card = ({ title, imgSrc, isPro }) => (
   <div className="card">
     <div className="img-container">
       <button className="copybtn">
-        View <i className="fa-solid fa-arrow-right"></i>
+        View 
       </button>
       <img src={imgSrc} alt={title} className="card-img" />
     </div>

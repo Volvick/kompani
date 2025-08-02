@@ -236,15 +236,16 @@ header {
   font-family: var(--font-primary);
   border-radius: var(--radius-lg);
   font-weight: var(--font-medium);
-  color: var(--color-black);
   opacity: 0;
   pointer-events: none;
-  transition: all var(--transition-default);
   transform: scale(0.9) translateY(8px);
   z-index: 10;
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  color: var(--color-black);
+  transition: all var(--transition-default);
+
 }
 
 .copybtn i {
@@ -276,9 +277,8 @@ header {
 }
 
 
-
-.card:hover .copybtn:hover i {
-  transform: translateX(2px);
+.copybtn:hover  {
+  filter: brightness(.95);
 }
 
 /* Card details - Enhanced and cleaner */
