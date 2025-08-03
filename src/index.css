@@ -99,7 +99,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  margin-bottom: 4rem;
 }
 
 .logo {
@@ -110,13 +109,11 @@ header {
   border-radius: var(--radius-lg);
   margin-right: 2rem;
   background: var(--color-white);
-  border: 1px solid var(--color-border-light);
-  box-shadow: var(--shadow-sm);
 }
 
 .logo img {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 5.2rem;
+  height: 5.2rem;
   padding: 0.4rem;
   border-radius: var(--radius-md);
   transition: all var(--transition-default);
@@ -158,15 +155,27 @@ header {
   display: flex;
   flex-direction: column;
   padding-bottom: 8rem;
+  border-bottom: 1px solid var(--color-border);
+}
+/* section box heading */
+.section-box-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
 }
 .section-box .title {
-  margin-bottom: 4rem;
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   letter-spacing: -0.025em;
   font-weight: var(--font-bold);
   font-size: 2.8rem;
   color: var(--color-black);
   position: relative;
   line-height: var(--leading-tight);
+  display: flex;
 }
 
 .section-box .title::after {
@@ -179,7 +188,22 @@ header {
   background: var(--color-primary);
   border-radius: 2px;
 }
+/* view more btn */
 
+.view-more-btn button{
+  background: none;
+  outline: none;
+  border: 1px solid var(--color-black);
+  padding: 1.5rem 2.4rem;
+  font-weight: var(--font-semibold);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--transition-slow);
+}
+.view-more-btn button:hover{
+  border-color: var(--color-border);
+}
 .card-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -338,8 +362,9 @@ header {
 }
 
 .assect-icon {
-  width: 2rem;
-  height: 2rem;
+  /* width: 2.5rem; */
+  height:2rem;
+  width: 2.5rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: 0.2rem;
@@ -366,6 +391,56 @@ header {
   width: 1.2rem;
   height: 1.2rem;
   /* filter: hue-rotate(30deg) saturate(1.1); */
+}
+.footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.footer svg{
+  width: 1.7rem;
+  margin-right: 1rem;
+}
+.footer .bookmark{
+  font-weight: var(--font-bold);
+  cursor: pointer;
+}
+.cta{
+  color: var(--color-paragraph);
+  font-weight: var(--font-bold);
+  text-decoration: none;
+}
+.footer .cta{
+  color: var(--color-primary);
+  font-weight: var(--font-bold);
+}
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9cedb;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a7b5;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c9cedb transparent;
 }
 
 /* Responsive design */
@@ -411,7 +486,6 @@ header {
 
   .section-box .title {
     font-size: 2.4rem;
-    margin-bottom: 3rem;
   }
 
   .card {
@@ -423,7 +497,14 @@ header {
   html {
     font-size: 54%;
   }
+  .section-box .title {
+    font-size: 2.4rem;
+  }
+  .view-more-btn button{
+    /* border: none; */
+  padding: 1rem 1.4rem;
 
+  }
   .card-detail {
     padding: 1.6rem;
     flex-wrap: wrap;

@@ -5,7 +5,19 @@ const Header = () => (
     </div>
     <div className="header-text">
       <h1>Komponi - Tailwind Components</h1>
-      <p>Build cleaner UIs with production-ready Tailwind components.</p>
+      <p>
+        Build fast. Ship clean. With Tailwind components -{" "}
+        <a
+          target="_blank"
+          title="Click
+"
+          className="cta"
+          href="https://x.com/volvickode"
+        >
+          {" "}
+          Volvick
+        </a>
+      </p>
     </div>
   </header>
 );
