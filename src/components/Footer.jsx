@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>
-        New components added daily.{" "}
+        New components added daily <br />
         <a
           target="_blank"
           title="Click
@@ -10,7 +10,6 @@ const Footer = () => {
           className="cta"
           href="https://x.com/volvickode"
         >
-          {" "}
           Stay tuned
         </a>{" "}
         &{" "}

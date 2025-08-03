@@ -68,7 +68,9 @@ html {
   --transition-default: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+a{
+  text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -397,6 +399,10 @@ header {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  text-align: center;
+}
+.footer br{
+  display: none;
 }
 .footer svg{
   width: 1.7rem;
@@ -551,5 +557,9 @@ header {
 
   .time {
     font-size: 1.1rem;
+  }
+  .footer br{
+    display: block;
+
   }
 }

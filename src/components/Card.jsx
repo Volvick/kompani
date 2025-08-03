@@ -4,7 +4,11 @@ const Card = ({ title, imgSrc, isPro }) => {
   const id = title.toLowerCase().replace(/\s+/g, "-");
 
   return (
+
     <div className="card">
+      <Link to={`/preview/${id}`} className="copybtn">
+
+
       <div className="img-container">
         <Link to={`/preview/${id}`} className="copybtn">
           View
@@ -31,6 +35,7 @@ const Card = ({ title, imgSrc, isPro }) => {
           </p>
         </div>
       </div>
+       </Link>
     </div>
   );
 };
