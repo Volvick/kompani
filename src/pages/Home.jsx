@@ -23,6 +23,7 @@ const heroCards = [
   },
 ];
 
+
 const cardDesigns = [
   { title: "Card/001", imgSrc: "/assets/Card/card3.png", isPro: false },
   { title: "Card/002", imgSrc: "/assets/Card/card8.png", isPro: false },
