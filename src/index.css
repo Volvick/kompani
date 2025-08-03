@@ -248,6 +248,7 @@ header {
 
 .img-container .copybtn {
   position: absolute;
+  text-decoration: none;
   outline: none;
   border: none;
   background: rgba(255, 255, 255, 0.95);
@@ -263,8 +264,6 @@ header {
   pointer-events: none;
   transform: scale(0.9) translateY(8px);
   z-index: 10;
-  display: flex;
-  align-items: center;
   gap: 0.6rem;
   color: var(--color-black);
   transition: all var(--transition-default);
